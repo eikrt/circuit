@@ -61,7 +61,6 @@ void loop(SDL_Window *window, SDL_Surface *screenSurface, SDL_Renderer* renderer
 
 	SDL_Texture* groundTex = loadTexture(screenSurface, renderer, "../res/ground.bmp", rgb);
 	
-	SDL_Texture* waterTex = loadTexture(screenSurface, renderer, "../res/water.bmp", rgb);
 
 
 	for (int i = 0; i < SIZE; i++){
@@ -73,7 +72,7 @@ void loop(SDL_Window *window, SDL_Surface *screenSurface, SDL_Renderer* renderer
 //			map[i*j].texture = colorTexture(waterTex, rgb2);
 
 
-			map[i*j].texture = loadTexture(screenSurface, renderer, "../res/water.bmp", rgb2);
+			map[i*j].texture = loadTexture(screenSurface, renderer, "../res/tile.bmp", rgb2);
 	//	}
 		//	else {
 	//			int rgb[] = {0,0,0};
